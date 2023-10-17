@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Alert Box Example</title>
+</head>
+<body>
+    <h1>Input Text and Alert</h1>
+    <label for="inputText">Enter Text:</label>
+    <input type="text" id="inputText">
+    <button id="showAlertButton">Show Alert</button>
+
+    <script>
+        // JavaScript to handle the button click event
+        document.getElementById('showAlertButton').addEventListener('click', function() {
+            var inputText = document.getElementById('inputText').value;
+            if (inputText) {
+                alert('You entered: ' + inputText);
+            } else {
+                alert('Please enter some text before clicking the button.');
+            }
+        });
+    </script>
+</body>
+</html>
